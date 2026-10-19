@@ -4,11 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80884793-1790-4faf-bc62-a178e98ce4c9" name="Changes" comment="Código main limpio" />
+    <list default="true" id="80884793-1790-4faf-bc62-a178e98ce4c9" name="Changes" comment="Código main limpio">
+      <change afterPath="$PROJECT_DIR$/aad/src/main/java/com/vmacgar473/aad/CloudBucketService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aad/src/main/java/com/vmacgar473/aad/CryptoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aad/src/main/java/com/vmacgar473/aad/MultiLanguageDataGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aad/src/main/java/com/vmacgar473/aad/StoreIngestionScheduler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aad/src/main/java/com/vmacgar473/aad/AadApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/aad/src/main/java/com/vmacgar473/aad/AadApplication.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="FormatOnSaveOptions">
     <option name="myRunOnSave" value="true" />
@@ -27,12 +41,22 @@
     &quot;assignee&quot;: &quot;Vitomg05&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Vitomg05/AAD_2026-2027.git&quot;,
-    &quot;accountId&quot;: &quot;0bcbcb06-fa70-46f5-9f61-2aeea0bc804b&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Vitomg05/AAD_2026-2027.git",
+    "accountId": "0bcbcb06-fa70-46f5-9f61-2aeea0bc804b"
+  },
+  "recentNewPullRequestHead": {
+    "server": {
+      "useHttp": false,
+      "host": "github.com",
+      "port": null,
+      "suffix": null
+    },
+    "owner": "Vitomg05",
+    "repository": "AAD_2026-2027"
   }
-}</component>
+}]]></component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -63,7 +87,7 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "Spring Boot.AadApplication.executor": "Run",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "ra1__act1",
+    "git-widget-placeholder": "#1 on ra1__act1",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "G:/Mi unidad/2 DAM/AccesoDatos/PortApps/intellij-idea-portable/AAD_2026-2027",
