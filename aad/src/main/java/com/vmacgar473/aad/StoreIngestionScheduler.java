@@ -32,6 +32,7 @@ public class StoreIngestionScheduler {
     /**
      * REQUISITO 1: Ejecución automatizada con Spring Scheduler.
      * Se ejecuta de forma automática en segundo plano cada 5000 ms (5 segundos).
+     * La expresión real para el entorno real sería @Scheduled(cron = "0 0 3 * * *")
      */
     @Scheduled(fixedRate = 5000)
     public void processStoreBatches() {
@@ -127,7 +128,10 @@ public class StoreIngestionScheduler {
                     boolean isFirstLine = true;
 
                     while ((line = br.readLine()) != null) {
-                        if (isFirstLine) { isFirstLine = false; continue; } // Saltamos cabecera
+                        if (isFirstLine) {
+                            isFirstLine = false;
+                            continue;
+                        } // Saltamos cabecera
 
                         String[] columns = line.split(",");
                         if (columns.length >= 3) {
@@ -194,7 +198,10 @@ public class StoreIngestionScheduler {
                 String line;
                 boolean isFirstLine = true;
                 while ((line = br.readLine()) != null) {
-                    if (isFirstLine) { isFirstLine = false; continue; }
+                    if (isFirstLine) {
+                        isFirstLine = false;
+                        continue;
+                    }
 
                     String[] columns = line.split(",");
                     if (columns.length >= 3) {
@@ -230,7 +237,10 @@ public class StoreIngestionScheduler {
             boolean isFirstLine = true;
 
             while ((line = br.readLine()) != null) {
-                if (isFirstLine) { isFirstLine = false; continue; } // Omitir cabeceras
+                if (isFirstLine) {
+                    isFirstLine = false;
+                    continue;
+                } // Omitir cabeceras
 
                 String[] columns = line.split(",");
                 if (columns.length >= 3) {
