@@ -1,4 +1,4 @@
-package com.vmacgar473.aad;
+package com.vmacgar473.aad.service;
 
 import org.springframework.stereotype.Service;
 
@@ -22,5 +22,12 @@ public class CryptoService {
 
         // Devolvemos los bytes descifrados directamente en memoria RAM
         return cipher.doFinal(encryptedBytes);
+    }
+
+    public byte[] encryptAes(byte[] plainBytes, String secretKeyStr) throws Exception {
+        SecretKeySpec secretKey = new SecretKeySpec(secretKeyStr.getBytes(StandardCharsets.UTF_8), "AES");
+        Cipher cipher = Cipher.getInstance("AES/ECB/PKCS5Padding");
+        cipher.init(Cipher.ENCRYPT_MODE, secretKey);
+        return cipher.doFinal(plainBytes);
     }
 }

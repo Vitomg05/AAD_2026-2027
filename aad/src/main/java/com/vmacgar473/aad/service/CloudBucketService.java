@@ -1,4 +1,4 @@
-package com.vmacgar473.aad;
+package com.vmacgar473.aad.service;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
